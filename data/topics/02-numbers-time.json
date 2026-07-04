@@ -1,0 +1,142 @@
+{
+  "unit": 2,
+  "topic": "numbers-time",
+  "title_en": "Numbers & Time",
+  "title_vi": "Số đếm & Thời gian",
+  "cefr": "A1",
+  "minutes": 30,
+  "source": "wordlist: NGSL (CC BY-SA 4.0); examples/exercises: original",
+  "grammar": {
+    "title_vi": "Ngữ pháp trọng tâm — Grammar focus",
+    "intro_vi": "Unit này luyện cách nói số, hỏi giờ và dùng giới từ thời gian. Hãy áp dụng khi làm phần D và phần Viết.",
+    "points": [
+      ["Số đếm (one, two, three …) dùng để đếm, nói tuổi và nói giờ.",
+       "one · two · three · I am ten. · It is nine."],
+      ["Hỏi giờ: What time is it? — trả lời: It is + giờ.",
+       "What time is it? It is seven o'clock."],
+      ["Giờ chẵn dùng o'clock; giờ rưỡi dùng half past.",
+       "It is three o'clock. · It is half past six."],
+      ["Giới từ thời gian: at + giờ, on + thứ/ngày, in + buổi.",
+       "at 7 o'clock · on Monday · in the morning"]
+    ]
+  },
+  "words": [
+    ["number", "/ˈnʌm.bər/", "n", "số / con số", "My phone number is new.", "Số điện thoại của tôi mới.",
+      [["a phone number", "số điện thoại"], ["a big number", "một con số lớn"]]],
+    ["time", "/taɪm/", "n", "thời gian / giờ", "What time is it?", "Mấy giờ rồi?",
+      [["free time", "thời gian rảnh"], ["on time", "đúng giờ"]]],
+    ["hour", "/aʊər/", "n", "giờ (60 phút)", "I sleep eight hours a day.", "Tôi ngủ tám tiếng một ngày.",
+      [["one hour", "một giờ"], ["half an hour", "nửa giờ"]]],
+    ["minute", "/ˈmɪn.ɪt/", "n", "phút", "Please wait five minutes.", "Xin đợi năm phút.",
+      [["five minutes", "năm phút"], ["in a minute", "một lát nữa"]]],
+    ["day", "/deɪ/", "n", "ngày", "There are seven days in a week.", "Một tuần có bảy ngày.",
+      [["every day", "mỗi ngày"], ["a busy day", "một ngày bận rộn"]]],
+    ["week", "/wiːk/", "n", "tuần", "I work five days a week.", "Tôi làm việc năm ngày một tuần.",
+      [["this week", "tuần này"], ["next week", "tuần sau"]]],
+    ["month", "/mʌnθ/", "n", "tháng", "There are twelve months in a year.", "Một năm có mười hai tháng.",
+      [["this month", "tháng này"], ["last month", "tháng trước"]]],
+    ["year", "/jɪər/", "n", "năm", "I am twenty years old.", "Tôi hai mươi tuổi.",
+      [["this year", "năm nay"], ["every year", "mỗi năm"]]],
+    ["morning", "/ˈmɔː.nɪŋ/", "n", "buổi sáng", "I get up at six in the morning.", "Tôi dậy lúc sáu giờ sáng.",
+      [["in the morning", "vào buổi sáng"], ["good morning", "chào buổi sáng"]]],
+    ["afternoon", "/ˌɑːf.təˈnuːn/", "n", "buổi chiều", "We have lunch in the afternoon.", "Chúng tôi ăn trưa vào buổi chiều.",
+      [["in the afternoon", "vào buổi chiều"], ["this afternoon", "chiều nay"]]],
+    ["evening", "/ˈiːv.nɪŋ/", "n", "buổi tối", "I watch TV in the evening.", "Tôi xem TV vào buổi tối.",
+      [["in the evening", "vào buổi tối"], ["good evening", "chào buổi tối"]]],
+    ["night", "/naɪt/", "n", "ban đêm / đêm", "I sleep at night.", "Tôi ngủ vào ban đêm.",
+      [["at night", "vào ban đêm"], ["good night", "chúc ngủ ngon"]]],
+    ["clock", "/klɒk/", "n", "đồng hồ (treo / để bàn)", "The clock is on the wall.", "Cái đồng hồ ở trên tường.",
+      [["a wall clock", "đồng hồ treo tường"], ["an alarm clock", "đồng hồ báo thức"]]],
+    ["watch", "/wɒtʃ/", "n", "đồng hồ đeo tay", "My watch is new.", "Đồng hồ của tôi mới.",
+      [["a new watch", "một chiếc đồng hồ mới"], ["wear a watch", "đeo đồng hồ"]]],
+    ["today", "/təˈdeɪ/", "adv", "hôm nay", "Today is Monday.", "Hôm nay là thứ Hai.",
+      [["today is …", "hôm nay là …"], ["not today", "không phải hôm nay"]]]
+  ],
+  "mcq": [
+    ["\"hour\" means:", ["phút", "giờ (60 phút)", "ngày", "tuần"], 1],
+    ["\"week\" means:", ["năm", "tháng", "tuần", "ngày"], 2],
+    ["\"morning\" means:", ["buổi sáng", "buổi tối", "ban đêm", "buổi chiều"], 0],
+    ["What time is it? (7:00)", ["It is seven o'clock.", "It is half past seven.", "It is seven minutes.", "It is seven days."], 0],
+    ["\"today\" means:", ["hôm qua", "ngày mai", "hôm nay", "buổi tối"], 2]
+  ],
+  "matching": [
+    ["minute", "phút"],
+    ["month", "tháng"],
+    ["year", "năm"],
+    ["night", "ban đêm"],
+    ["clock", "đồng hồ"],
+    ["watch", "đồng hồ đeo tay"]
+  ],
+  "cloze": {
+    "bank": ["time", "hour", "minute", "day", "week", "month", "year", "morning", "night", "clock"],
+    "items": [
+      ["What ______ is it? It is six o'clock.", "time"],
+      ["There are sixty minutes in one ______.", "hour"],
+      ["Please wait one ______.", "minute"],
+      ["There are seven days in a ______.", "week"],
+      ["I get up early in the ______.", "morning"],
+      ["There are twelve months in a ______.", "year"],
+      ["Monday is the first ______ of the week.", "day"],
+      ["I sleep at ______.", "night"],
+      ["There are thirty days in this ______.", "month"],
+      ["The ______ on the wall says ten o'clock.", "clock"]
+    ]
+  },
+  "word_order": [
+    [["What", "time", "is", "it"], "What time is it?",
+      "Câu hỏi giờ: từ hỏi (What time) + is + chủ ngữ (it)?"],
+    [["I", "get", "up", "at", "six"], "I get up at six.",
+      "Giới từ 'at' đứng trước giờ: at six."],
+    [["We", "have", "lunch", "in", "the", "afternoon"], "We have lunch in the afternoon.",
+      "Giới từ 'in' đứng trước buổi: in the afternoon."],
+    [["The", "shop", "opens", "on", "Monday"], "The shop opens on Monday.",
+      "Giới từ 'on' đứng trước thứ/ngày: on Monday."],
+    [["There", "are", "seven", "days", "in", "a", "week"], "There are seven days in a week.",
+      "Cấu trúc 'There are + số + danh từ số nhiều'."],
+    [["My", "class", "starts", "at", "eight"], "My class starts at eight.",
+      "Present simple (starts) + at + giờ."],
+    [["There", "are", "twelve", "months", "in", "a", "year"], "There are twelve months in a year.",
+      "Số đếm (twelve) đứng trước danh từ số nhiều (months)."],
+    [["I", "go", "to", "bed", "at", "ten"], "I go to bed at ten.",
+      "Cụm 'go to bed' + at + giờ."],
+    [["She", "works", "five", "days", "a", "week"], "She works five days a week.",
+      "he/she + động từ thêm -s (works); 'a week' = mỗi tuần."],
+    [["We", "meet", "in", "the", "morning"], "We meet in the morning.",
+      "Giới từ 'in' đứng trước buổi: in the morning."]
+  ],
+  "listening": {
+    "dictation": [
+      "It is seven o'clock in the morning.",
+      "There are sixty minutes in one hour.",
+      "I go to school at eight o'clock."
+    ],
+    "choose": [
+      ["morning", ["morning", "evening", "afternoon"]],
+      ["watch", ["watch", "clock", "week"]]
+    ],
+    "audio_placeholder_url": "https://github.com/luatnq/english-learning/raw/main/dist/audio/02-numbers-time/"
+  },
+  "reading": {
+    "text": "My name is Nam. I get up at six o'clock in the morning. I have breakfast at half past six. My school starts at seven o'clock. There are five lessons in the morning. I go home at twelve. In the evening, I do my homework and go to bed at ten o'clock.",
+    "questions": [
+      ["Nam gets up at six o'clock.", true],
+      ["Nam has breakfast at seven o'clock.", false],
+      ["School starts at seven o'clock.", true],
+      ["There are five lessons in the afternoon.", false],
+      ["Nam goes to bed at ten o'clock.", true]
+    ]
+  },
+  "writing": {
+    "prompt": "Write about your daily times (3–5 sentences).",
+    "prompt_vi": "Viết về giờ giấc hằng ngày của bạn (3–5 câu).",
+    "questions": [
+      ["What time do you get up?", "Bạn thức dậy lúc mấy giờ?"],
+      ["What time does your school or work start?", "Trường/công việc của bạn bắt đầu lúc mấy giờ?"],
+      ["What do you do in the afternoon?", "Buổi chiều bạn làm gì?"],
+      ["What time do you have dinner?", "Bạn ăn tối lúc mấy giờ?"],
+      ["What time do you go to bed?", "Bạn đi ngủ lúc mấy giờ?"]
+    ],
+    "grammar_reminder_vi": "Nhớ dùng: at + giờ (at seven o'clock), in the morning/afternoon/evening, on + thứ.",
+    "model": "I get up at six o'clock in the morning. My school starts at seven. In the afternoon, I play football. I have dinner at seven in the evening. I go to bed at ten o'clock."
+  }
+}
