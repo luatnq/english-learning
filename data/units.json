@@ -9,5 +9,16 @@
     "audioDir": "dist/audio/unit01/",
     "worksheet": "dist/unit-01-family_worksheet.pdf",
     "answers": "dist/unit-01-family_answers.pdf"
+  },
+  {
+    "id": "02-numbers-time",
+    "title_en": "Numbers & Time",
+    "title_vi": "Số đếm & Thời gian",
+    "cefr": "A1",
+    "words": 15,
+    "json": "data/topics/02-numbers-time.json",
+    "audioDir": "dist/audio/02-numbers-time/",
+    "worksheet": "dist/unit-02-numbers-time_worksheet.pdf",
+    "answers": "dist/unit-02-numbers-time_answers.pdf"
   }
 ]

@@ -13,3 +13,6 @@ __pycache__/
 # State của công cụ AI/OMC — không public
 .omc/
 scratchpad/
+
+# Môi trường ảo Python (harness) — mỗi máy tự tạo
+.venv/

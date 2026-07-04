@@ -1,7 +1,13 @@
-# CLAUDE.md — Ngữ cảnh dự án `english-learning`
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+# Ngữ cảnh dự án `english-learning`
 
 > File này để Claude Code (và bất kỳ AI/người mới nào) hiểu nhanh dự án. Đọc file này trước khi làm việc.
 > Tài liệu thiết kế sâu hơn: `IDEA-RESEARCH.md`, `EXERCISE-DESIGN.md`, `SOURCING-AND-LICENSING.md`, `README.md`.
+>
+> **Live:** https://luatnq.github.io/english-learning/ · **Repo:** `git@github.com:luatnq/english-learning.git` (public, deploy tự động từ branch `main`, thư mục gốc `/`).
 
 ## 1. Dự án là gì
 
@@ -116,45 +122,55 @@ Website dùng `fetch()` → **phải chạy qua web server** (không mở `file:
 
 ## 6. Audio — quy ước tên file
 
-Trong `dist/audio/unit<NN>/`:
+Trong `dist/audio/<id>/` (`<id>` = tên file JSON, vd `01-family`, `01-family-p2`; khớp `audioDir` trong `units.json` — `app.js` lấy base audio từ đó):
 - `e1_<i>.mp3` — câu dictation thứ i (Section E1).
 - `e2_<i>.mp3` — từ "listen & choose" thứ i (E2).
 - `reading.mp3` — đoạn đọc Section F.
 - `words/<slug>.mp3` — phát âm từng từ ("từ + câu ví dụ"). `slug` = lowercase, ký tự không phải a-z0-9 → `-`.
 
-Sinh bằng `harness/build_audio.py` (edge-tts, giọng `en-US-AriaNeural`, `rate="-12%"`). Cần mạng + `ffmpeg`.
+Sinh bằng `harness/build_audio.py <unit.json>` (edge-tts, giọng `en-US-AriaNeural`, `rate="-12%"`). Cần `edge-tts` + mạng — **không cần ffmpeg** (edge-tts ghi mp3 trực tiếp). Thiếu deps → tự bỏ qua, không phá build.
 
 ## 7. Quy trình thêm một unit mới (end-to-end)
 
-1. Tạo `data/topics/<id>.json` đúng schema mục 4 (dùng Claude sinh nội dung; từ vựng lấy từ NGSL).
-2. Sinh audio: chỉnh `build_audio.py` trỏ tới unit mới → `python3 harness/build_audio.py`.
-3. Sinh worksheet + answer PDF (xem mục 8 — hiện đang gắn với Unit 1, cần tổng quát hoá).
-4. Thêm một mục vào `data/units.json`.
-5. Xong — website tự hiện thẻ unit mới; không sửa code web.
+**Cách khuyến nghị — dùng skill:** gõ **`/new-unit`** (hoặc "tạo bài mới"). Skill `.claude/skills/new-unit/` tự: soi `data/curriculum.json` + lịch sử (`data/topics/*.json`) → chọn bài kế tiếp → sinh JSON đúng schema → chạy `build_unit.py`. Không cần mô tả nhiều.
+
+**Cách thủ công (nếu tự viết JSON):**
+1. Tạo `data/topics/<id>.json` đúng schema §4 (từ vựng nền NGSL). `<id>` = `NN-topic` (vd `05-food`).
+2. Một lệnh dựng tất cả:
+   ```bash
+   python3 harness/build_unit.py data/topics/<id>.json   # validate → manifest → PDF → audio
+   ```
+3. Xong — website tự hiện thẻ unit mới (đã vào `data/units.json`); không sửa code web. Push `main` để deploy.
 
 ## 8. Nợ kỹ thuật / việc nên làm tiếp (cho Claude Code)
 
-- **Tổng quát hoá builder PDF.** Hiện `harness/build_unit_family.py` **vừa chứa nội dung Unit 1 vừa render PDF**. Nên tách thành: (a) nội dung chỉ nằm trong `data/topics/*.json`; (b) một script chung `harness/render_pdf.py <unit.json>` đọc JSON bất kỳ và xuất worksheet + answer key. Tương tự, `build_audio.py` nên nhận tham số `<unit.json>` thay vì hard-code Unit 1.
-- **Cập nhật QR.** Sau khi deploy Pages, thay `<user>`/repo trong `audio_placeholder_url` để QR trỏ đúng audio, rồi build lại PDF.
-- **Thêm unit:** Food, House, Daily routine… theo đúng khuôn Unit 1.
-- **Spaced repetition (tuỳ chọn):** lưu tiến độ trong `localStorage`, lên lịch ôn từ (bắt đầu SM-2). Chưa làm.
-- Giữ nguyên tắc mục 2 khi mở rộng (không AI chấm, nguồn mở, đơn giản).
+- ✅ **Đã tổng quát hoá builder.** `build_unit_family.py` (trộn nội dung + render) đã bị xoá. Harness mới nhận `<unit.json>` bất kỳ: `render_pdf.py` (font tự dò Linux DejaVu / macOS Arial), `build_audio.py`, `validate_unit.py`, `add_to_manifest.py`, và `build_unit.py` (gói tất cả). Bug unpack 7-vs-6 phần tử trong `build_audio.py` đã sửa. QR trong PDF Unit 1 đã rebuild đúng (`luatnq`).
+- ⏳ **Còn lại: viết nội dung các unit** trong `data/curriculum.json` (Unit 2→26). Dùng `/new-unit`.
+- **Spaced repetition (tuỳ chọn):** lưu tiến độ trong `localStorage`, lên lịch ôn từ (SM-2). Chưa làm.
+- Giữ nguyên tắc §2 khi mở rộng (không AI chấm, nguồn mở, đơn giản).
+
+**Kiến trúc harness (degrade gracefully):** `validate` + `manifest` chỉ dùng thư viện chuẩn ⇒ luôn chạy ⇒ web (sản phẩm chính) cập nhật ngay. `render_pdf` cần reportlab/qrcode (dùng `./.venv`), `build_audio` cần edge-tts + mạng (không cần ffmpeg) — thiếu thì bỏ qua kèm hướng dẫn, không lỗi.
 
 ## 9. Lệnh hay dùng
 
 ```bash
-# chạy web local
-python3 -m http.server 8000
+# chạy web local (đừng mở file:// — web dùng fetch)
+python3 -m http.server 8000        # → http://localhost:8000
 
-# sinh lại Unit 1 (JSON + PDF)
-python3 harness/build_unit_family.py
+# tạo unit mới: gõ skill trong Claude Code
+/new-unit                          # tự chọn bài kế tiếp theo lộ trình
 
-# sinh audio
-python3 harness/build_audio.py
+# hoặc dựng 1 unit từ JSON (validate → manifest → PDF → audio)
+python3 harness/build_unit.py data/topics/<id>.json
+python3 harness/build_unit.py data/topics/<id>.json --no-audio   # chỉ web + PDF
 
-# yêu cầu: pip install reportlab qrcode[pil] edge-tts  ; và ffmpeg, font DejaVu
+# lần đầu, tạo venv cho PDF (macOS: đã có font Arial Unicode sẵn):
+python3 -m venv .venv && .venv/bin/pip install reportlab "qrcode[pil]"
+# muốn audio: .venv/bin/pip install edge-tts     (cần mạng; không cần ffmpeg)
 ```
 
 ## 10. Trạng thái hiện tại
 
-Xong: 3 tài liệu thiết kế; **Unit 1 Family** đầy đủ (JSON + 2 PDF + 21 mp3); website tĩnh (đã test bằng jsdom). Chưa: push GitHub + bật Pages; tổng quát hoá builder; thêm unit khác.
+Xong: 3 tài liệu thiết kế; **Unit 1 Family** đầy đủ (JSON + 2 PDF + 21 mp3); website tĩnh (đã test bằng jsdom); **đã push GitHub + bật Pages** (live tại https://luatnq.github.io/english-learning/, deploy tự động khi push `main`).
+
+Chưa: tổng quát hoá builder (`render_pdf.py`/`build_audio.py`/`build_unit.py` nhận `<unit.json>`); thêm unit khác; skill `/new-unit` + `data/curriculum.json` (lộ trình A1→A2) đã **thiết kế xong nhưng chưa implement**).
