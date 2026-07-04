@@ -1,0 +1,71 @@
+{
+  "topic": "family",
+  "title_vi": "Gia đình",
+  "cefr": "A1",
+  "words": [
+    {
+      "word": "mother",
+      "pos": "noun",
+      "ipa": "/ˈmʌð.ər/",
+      "meaning_vi": "mẹ",
+      "example": "My mother cooks dinner every evening.",
+      "example_vi": "Mẹ tôi nấu bữa tối mỗi buổi chiều."
+    },
+    {
+      "word": "father",
+      "pos": "noun",
+      "ipa": "/ˈfɑː.ðər/",
+      "meaning_vi": "bố / cha",
+      "example": "Her father works in a bank.",
+      "example_vi": "Bố của cô ấy làm việc ở một ngân hàng."
+    },
+    {
+      "word": "brother",
+      "pos": "noun",
+      "ipa": "/ˈbrʌð.ər/",
+      "meaning_vi": "anh / em trai",
+      "example": "I have one older brother.",
+      "example_vi": "Tôi có một người anh trai."
+    },
+    {
+      "word": "sister",
+      "pos": "noun",
+      "ipa": "/ˈsɪs.tər/",
+      "meaning_vi": "chị / em gái",
+      "example": "My sister is a student.",
+      "example_vi": "Chị/em gái tôi là học sinh."
+    },
+    {
+      "word": "parents",
+      "pos": "noun",
+      "ipa": "/ˈpeə.rənts/",
+      "meaning_vi": "bố mẹ (cha mẹ)",
+      "example": "My parents live in the countryside.",
+      "example_vi": "Bố mẹ tôi sống ở nông thôn."
+    },
+    {
+      "word": "child",
+      "pos": "noun",
+      "ipa": "/tʃaɪld/",
+      "meaning_vi": "đứa trẻ / con",
+      "example": "The child is playing in the garden.",
+      "example_vi": "Đứa trẻ đang chơi trong vườn."
+    },
+    {
+      "word": "grandmother",
+      "pos": "noun",
+      "ipa": "/ˈɡræn.mʌð.ər/",
+      "meaning_vi": "bà",
+      "example": "My grandmother tells us stories.",
+      "example_vi": "Bà tôi kể chuyện cho chúng tôi nghe."
+    },
+    {
+      "word": "family",
+      "pos": "noun",
+      "ipa": "/ˈfæm.əl.i/",
+      "meaning_vi": "gia đình",
+      "example": "We are a small family of four.",
+      "example_vi": "Chúng tôi là một gia đình nhỏ có bốn người."
+    }
+  ]
+}

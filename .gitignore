@@ -1,0 +1,15 @@
+# Tiến độ học cá nhân (nếu có) — không public
+progress/
+
+# Ảnh preview tạm khi kiểm tra PDF
+dist/*.png
+dist/_qr_*.png
+
+# Rác hệ điều hành / Python
+.DS_Store
+__pycache__/
+*.pyc
+
+# State của công cụ AI/OMC — không public
+.omc/
+scratchpad/

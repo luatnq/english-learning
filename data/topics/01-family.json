@@ -1,0 +1,627 @@
+{
+  "unit": 1,
+  "topic": "family",
+  "title_en": "Family",
+  "title_vi": "Gia đình",
+  "cefr": "A1",
+  "minutes": 30,
+  "source": "wordlist: NGSL (CC BY-SA 4.0); examples/exercises: original",
+  "grammar": {
+    "title_vi": "Ngữ pháp trọng tâm — Grammar focus",
+    "intro_vi": "Unit này luyện các điểm ngữ pháp sau. Hãy áp dụng chúng khi làm phần D và phần Viết.",
+    "points": [
+      [
+        "Sở hữu (my, your, his, her, our, their) đứng TRƯỚC danh từ.",
+        "my mother · his sister · their son"
+      ],
+      [
+        "have / has: I·you·we·they + have ; he·she + has (nói về thành viên gia đình).",
+        "I have a brother. · She has two children."
+      ],
+      [
+        "be + a/an + danh từ (nghề nghiệp / vai trò).",
+        "My father is a doctor. · My sister is a student."
+      ],
+      [
+        "Danh từ số nhiều thêm -s.",
+        "one brother → two brothers · one parent → two parents"
+      ]
+    ]
+  },
+  "words": [
+    [
+      "family",
+      "/ˈfæm.əl.i/",
+      "n",
+      "gia đình",
+      "I love my family.",
+      "Tôi yêu gia đình tôi.",
+      [
+        [
+          "a big family",
+          "gia đình đông người"
+        ],
+        [
+          "a small family",
+          "gia đình ít người"
+        ]
+      ]
+    ],
+    [
+      "mother",
+      "/ˈmʌð.ər/",
+      "n",
+      "mẹ",
+      "My mother cooks dinner every day.",
+      "Mẹ tôi nấu bữa tối mỗi ngày.",
+      [
+        [
+          "my mother",
+          "mẹ tôi"
+        ],
+        [
+          "a good mother",
+          "một người mẹ tốt"
+        ]
+      ]
+    ],
+    [
+      "father",
+      "/ˈfɑː.ðər/",
+      "n",
+      "bố / cha",
+      "Her father works in a bank.",
+      "Bố cô ấy làm ở ngân hàng.",
+      [
+        [
+          "my father",
+          "bố tôi"
+        ],
+        [
+          "a young father",
+          "một người bố trẻ"
+        ]
+      ]
+    ],
+    [
+      "parents",
+      "/ˈpeə.rənts/",
+      "n",
+      "bố mẹ",
+      "My parents live in Hanoi.",
+      "Bố mẹ tôi sống ở Hà Nội.",
+      [
+        [
+          "my parents",
+          "bố mẹ tôi"
+        ],
+        [
+          "live with parents",
+          "sống với bố mẹ"
+        ]
+      ]
+    ],
+    [
+      "brother",
+      "/ˈbrʌð.ər/",
+      "n",
+      "anh / em trai",
+      "I have one older brother.",
+      "Tôi có một anh trai.",
+      [
+        [
+          "an older brother",
+          "anh trai"
+        ],
+        [
+          "a younger brother",
+          "em trai"
+        ]
+      ]
+    ],
+    [
+      "sister",
+      "/ˈsɪs.tər/",
+      "n",
+      "chị / em gái",
+      "My sister is a student.",
+      "Chị/em gái tôi là học sinh.",
+      [
+        [
+          "an older sister",
+          "chị gái"
+        ],
+        [
+          "a younger sister",
+          "em gái"
+        ]
+      ]
+    ],
+    [
+      "son",
+      "/sʌn/",
+      "n",
+      "con trai",
+      "They have a son and a daughter.",
+      "Họ có một con trai và một con gái.",
+      [
+        [
+          "their only son",
+          "con trai duy nhất"
+        ],
+        [
+          "a baby son",
+          "con trai nhỏ"
+        ]
+      ]
+    ],
+    [
+      "daughter",
+      "/ˈdɔː.tər/",
+      "n",
+      "con gái",
+      "Their daughter is five years old.",
+      "Con gái họ năm tuổi.",
+      [
+        [
+          "their only daughter",
+          "con gái duy nhất"
+        ],
+        [
+          "a baby daughter",
+          "con gái nhỏ"
+        ]
+      ]
+    ],
+    [
+      "grandmother",
+      "/ˈɡræn.mʌð.ər/",
+      "n",
+      "bà",
+      "My grandmother tells us stories.",
+      "Bà tôi kể chuyện cho chúng tôi.",
+      [
+        [
+          "my grandmother",
+          "bà tôi"
+        ],
+        [
+          "visit grandmother",
+          "thăm bà"
+        ]
+      ]
+    ],
+    [
+      "grandfather",
+      "/ˈɡræn.fɑː.ðər/",
+      "n",
+      "ông",
+      "My grandfather likes tea.",
+      "Ông tôi thích trà.",
+      [
+        [
+          "my grandfather",
+          "ông tôi"
+        ],
+        [
+          "visit grandfather",
+          "thăm ông"
+        ]
+      ]
+    ],
+    [
+      "husband",
+      "/ˈhʌz.bənd/",
+      "n",
+      "chồng",
+      "Her husband is a doctor.",
+      "Chồng cô ấy là bác sĩ.",
+      [
+        [
+          "her husband",
+          "chồng cô ấy"
+        ],
+        [
+          "a good husband",
+          "một người chồng tốt"
+        ]
+      ]
+    ],
+    [
+      "wife",
+      "/waɪf/",
+      "n",
+      "vợ",
+      "His wife works at a school.",
+      "Vợ anh ấy làm ở trường học.",
+      [
+        [
+          "his wife",
+          "vợ anh ấy"
+        ],
+        [
+          "a good wife",
+          "một người vợ tốt"
+        ]
+      ]
+    ],
+    [
+      "baby",
+      "/ˈbeɪ.bi/",
+      "n",
+      "em bé",
+      "The baby is sleeping now.",
+      "Em bé đang ngủ.",
+      [
+        [
+          "a new baby",
+          "em bé mới sinh"
+        ],
+        [
+          "have a baby",
+          "sinh em bé"
+        ]
+      ]
+    ],
+    [
+      "aunt",
+      "/ɑːnt/",
+      "n",
+      "cô / dì / bác gái",
+      "My aunt lives near us.",
+      "Cô/dì tôi sống gần chúng tôi.",
+      [
+        [
+          "my aunt",
+          "cô/dì tôi"
+        ],
+        [
+          "visit my aunt",
+          "thăm cô/dì"
+        ]
+      ]
+    ],
+    [
+      "uncle",
+      "/ˈʌŋ.kəl/",
+      "n",
+      "chú / bác / cậu",
+      "My uncle has a big car.",
+      "Chú/bác tôi có một chiếc xe to.",
+      [
+        [
+          "my uncle",
+          "chú/bác tôi"
+        ],
+        [
+          "visit my uncle",
+          "thăm chú/bác"
+        ]
+      ]
+    ]
+  ],
+  "mcq": [
+    [
+      "\"mother\" means:",
+      [
+        "bố",
+        "mẹ",
+        "chị gái",
+        "bà"
+      ],
+      1
+    ],
+    [
+      "\"son\" means:",
+      [
+        "con gái",
+        "con trai",
+        "chồng",
+        "em bé"
+      ],
+      1
+    ],
+    [
+      "\"grandfather\" means:",
+      [
+        "ông",
+        "bà",
+        "chú",
+        "bố"
+      ],
+      0
+    ],
+    [
+      "\"wife\" means:",
+      [
+        "vợ",
+        "chồng",
+        "cô",
+        "con gái"
+      ],
+      0
+    ],
+    [
+      "\"aunt\" means:",
+      [
+        "chú",
+        "ông",
+        "cô / dì",
+        "anh trai"
+      ],
+      2
+    ]
+  ],
+  "matching": [
+    [
+      "daughter",
+      "con gái"
+    ],
+    [
+      "husband",
+      "chồng"
+    ],
+    [
+      "baby",
+      "em bé"
+    ],
+    [
+      "parents",
+      "bố mẹ"
+    ],
+    [
+      "uncle",
+      "chú / bác / cậu"
+    ],
+    [
+      "sister",
+      "chị / em gái"
+    ]
+  ],
+  "cloze": {
+    "bank": [
+      "mother",
+      "father",
+      "parents",
+      "brother",
+      "sister",
+      "grandmother",
+      "husband",
+      "baby",
+      "family",
+      "uncle"
+    ],
+    "items": [
+      [
+        "My ______ cooks dinner every day.",
+        "mother"
+      ],
+      [
+        "I have one older ______.",
+        "brother"
+      ],
+      [
+        "My ______ live in Hanoi.",
+        "parents"
+      ],
+      [
+        "The ______ is sleeping now.",
+        "baby"
+      ],
+      [
+        "I love my ______.",
+        "family"
+      ],
+      [
+        "Her ______ is a doctor.",
+        "husband"
+      ],
+      [
+        "My ______ works in a bank.",
+        "father"
+      ],
+      [
+        "My ______ tells us stories.",
+        "grandmother"
+      ],
+      [
+        "My ______ has a big car.",
+        "uncle"
+      ],
+      [
+        "My ______ is a student.",
+        "sister"
+      ]
+    ]
+  },
+  "word_order": [
+    [
+      [
+        "cooks",
+        "mother",
+        "My",
+        "dinner"
+      ],
+      "My mother cooks dinner.",
+      "Trật tự cơ bản: Chủ ngữ (My mother) + Động từ (cooks) + Tân ngữ (dinner)."
+    ],
+    [
+      [
+        "have",
+        "I",
+        "brother",
+        "a",
+        "big"
+      ],
+      "I have a big brother.",
+      "Tính từ (big) đứng TRƯỚC danh từ (brother): a big brother."
+    ],
+    [
+      [
+        "is",
+        "sister",
+        "My",
+        "a",
+        "student"
+      ],
+      "My sister is a student.",
+      "Câu với 'be': Chủ ngữ + is + a + danh từ. Danh từ đếm được số ít cần 'a'."
+    ],
+    [
+      [
+        "How",
+        "big",
+        "is",
+        "your",
+        "family"
+      ],
+      "How big is your family?",
+      "Câu hỏi với 'be': từ hỏi (How big) + is + chủ ngữ (your family)?"
+    ],
+    [
+      [
+        "does",
+        "not",
+        "like",
+        "My",
+        "grandfather",
+        "coffee"
+      ],
+      "My grandfather does not like coffee.",
+      "Phủ định thì hiện tại: chủ ngữ số ít + does not + động từ nguyên thể (like)."
+    ],
+    [
+      [
+        "father",
+        "My",
+        "a",
+        "is",
+        "teacher"
+      ],
+      "My father is a teacher.",
+      "be + a + nghề nghiệp: My father is a teacher."
+    ],
+    [
+      [
+        "two",
+        "have",
+        "They",
+        "children"
+      ],
+      "They have two children.",
+      "have + danh từ số nhiều: two children (số nhiều bất quy tắc của child)."
+    ],
+    [
+      [
+        "her",
+        "loves",
+        "She",
+        "parents"
+      ],
+      "She loves her parents.",
+      "Sở hữu 'her' đứng trước danh từ: her parents."
+    ],
+    [
+      [
+        "is",
+        "brother",
+        "His",
+        "ten",
+        "years",
+        "old"
+      ],
+      "His brother is ten years old.",
+      "Nói tuổi: Chủ ngữ + is + số + years old."
+    ],
+    [
+      [
+        "Do",
+        "have",
+        "you",
+        "a",
+        "sister"
+      ],
+      "Do you have a sister?",
+      "Câu hỏi thì hiện tại với 'you': Do + you + have + ...?"
+    ]
+  ],
+  "listening": {
+    "dictation": [
+      "My father works in a bank.",
+      "They have two children.",
+      "My grandmother is seventy years old."
+    ],
+    "choose": [
+      [
+        "daughter",
+        [
+          "father",
+          "daughter",
+          "brother"
+        ]
+      ],
+      [
+        "uncle",
+        [
+          "aunt",
+          "uncle",
+          "cousin"
+        ]
+      ]
+    ],
+    "audio_placeholder_url": "https://github.com/luatnq/english-learning/raw/main/dist/audio/unit01/"
+  },
+  "reading": {
+    "text": "This is my family. We are five people. My father works in a bank, and my mother is a teacher. I have one brother and one sister. My brother is ten years old. My grandmother lives with us. She tells us stories every evening. I love my family very much.",
+    "questions": [
+      [
+        "There are five people in the family.",
+        true
+      ],
+      [
+        "The mother works in a bank.",
+        false
+      ],
+      [
+        "The writer has two brothers.",
+        false
+      ],
+      [
+        "The grandmother lives with them.",
+        true
+      ],
+      [
+        "The grandmother tells stories in the morning.",
+        false
+      ]
+    ]
+  },
+  "writing": {
+    "prompt": "Write about your family (3–5 sentences).",
+    "prompt_vi": "Viết về gia đình bạn (3–5 câu).",
+    "questions": [
+      [
+        "How many people are there in your family?",
+        "Gia đình bạn có mấy người?"
+      ],
+      [
+        "Who are they?",
+        "Họ là những ai?"
+      ],
+      [
+        "What does your father / mother do?",
+        "Bố / mẹ bạn làm nghề gì?"
+      ],
+      [
+        "Do you have any brothers or sisters?",
+        "Bạn có anh / chị / em không?"
+      ],
+      [
+        "Who do you love most in your family?",
+        "Bạn yêu ai nhất trong gia đình?"
+      ]
+    ],
+    "grammar_reminder_vi": "Nhớ dùng: sở hữu (my/his/her), have/has, be + a + nghề nghiệp.",
+    "model": "This is my family. We are four people. My father is a driver and my mother is a nurse. I have one younger sister. I love my family very much."
+  }
+}

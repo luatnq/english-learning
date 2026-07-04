@@ -1,0 +1,13 @@
+[
+  {
+    "id": "01-family",
+    "title_en": "Family",
+    "title_vi": "Gia đình",
+    "cefr": "A1",
+    "words": 15,
+    "json": "data/topics/01-family.json",
+    "audioDir": "dist/audio/unit01/",
+    "worksheet": "dist/unit-01-family_worksheet.pdf",
+    "answers": "dist/unit-01-family_answers.pdf"
+  }
+]
